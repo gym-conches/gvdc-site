@@ -10,7 +10,8 @@ Site statique Bootstrap 5 de l'association **Gymnastique Volontaire de Conches-e
 |---|---|
 | Site en ligne | https://gym-vitalite-conches.netlify.app |
 | Tableau de bord Netlify | https://app.netlify.com |
-| Dépôt GitHub | https://github.com/nmasse-itix/gvdc-site |
+| Dépôt GitHub | https://github.com/gym-conches/gvdc-site |
+| Organisation GitHub | https://github.com/gym-conches |
 | Espace FFEPGV | https://ffepgv.fr/ |
 | Page Intramuros | https://www.conches-en-ouche.fr/associations/175709 |
 | Édition des tarifs et contacts (Pages CMS) | https://app.pagescms.org |
@@ -47,12 +48,14 @@ gvdc-site/
 
 ## Déploiement
 
+
+> Le site Netlify est rattaché au compte Netlify personnel de Nicolas MASSE (pas de compte dédié à l'association) et lié au dépôt `gym-conches/gvdc-site`. Pour transférer l'hébergement à une autre personne, inviter celle-ci dans l'équipe Netlify ou transférer le site (*Site configuration → General → Transfer site*).
 Le site est hébergé sur **Netlify** avec déploiement continu : chaque `git push` (ou chaque enregistrement dans Pages CMS) sur la branche `main` déclenche automatiquement la génération du site par Eleventy (`npm run build`) puis sa mise en ligne.
 
 ### Première installation (à faire une seule fois)
 
 ```bash
-git clone git@github.com:nmasse-itix/gvdc-site.git
+git clone git@github.com:gym-conches/gvdc-site.git
 cd gvdc-site
 npm install
 ```
@@ -87,12 +90,12 @@ La saison en cours, les tarifs, les membres du bureau, l'adresse postale et l'em
 ### Accès (à faire une seule fois)
 
 1. La personne chargée des mises à jour crée un compte gratuit sur https://github.com.
-2. Un administrateur du dépôt l'invite comme collaboratrice : sur GitHub, *Settings → Collaborators → Add people*. Elle accepte l'invitation reçue par email.
-3. Elle se connecte sur https://app.pagescms.org avec *Sign in with GitHub* et choisit le dépôt `gvdc-site` (à la première connexion, Pages CMS demande d'autoriser l'accès au dépôt).
+2. Un administrateur de l'organisation [gym-conches](https://github.com/gym-conches) l'invite : sur le dépôt, *Settings → Collaborators and teams → Add people* (rôle *Write*), ou bien comme membre de l'organisation (*People → Invite member*). Elle accepte l'invitation reçue par email.
+3. Elle se connecte sur https://app.pagescms.org avec *Sign in with GitHub* et choisit le dépôt `gym-conches/gvdc-site`. L'application GitHub Pages CMS doit être installée sur l'organisation `gym-conches` (à faire une fois par un propriétaire de l'organisation, depuis Pages CMS ou *Settings → GitHub Apps* de l'organisation).
 
 ### Faire une modification
 
-1. Ouvrir https://app.pagescms.org et choisir le dépôt `gvdc-site`.
+1. Ouvrir https://app.pagescms.org et choisir le dépôt `gym-conches/gvdc-site`.
 2. Dans le menu de gauche, choisir **Saison et tarifs** ou **Contacts**.
 3. Modifier les champs :
    - **Saison en cours** : au format `2026-2027`.
