@@ -49,8 +49,9 @@ gvdc-site/
 ## Déploiement
 
 
-> Le site Netlify est rattaché au compte Netlify personnel de Nicolas MASSE (pas de compte dédié à l'association) et lié au dépôt `gym-conches/gvdc-site`. Pour transférer l'hébergement à une autre personne, inviter celle-ci dans l'équipe Netlify ou transférer le site (*Site configuration → General → Transfer site*).
 Le site est hébergé sur **Netlify** avec déploiement continu : chaque `git push` (ou chaque enregistrement dans Pages CMS) sur la branche `main` déclenche automatiquement la génération du site par Eleventy (`npm run build`) puis sa mise en ligne.
+
+> Le site Netlify est rattaché au compte Netlify personnel de Nicolas MASSE (pas de compte dédié à l'association) et lié au dépôt `gym-conches/gvdc-site`. Pour transférer l'hébergement à une autre personne, inviter celle-ci dans l'équipe Netlify ou transférer le site (*Site configuration → General → Transfer site*).
 
 ### Première installation (à faire une seule fois)
 
